@@ -17,6 +17,18 @@ public class Main {
 		
 		Preguica preguica = new Preguica("Brucer", 10, "hihihi", true);
 		preguica.informacoes();
+		
+		System.out.println();
+		
+		cachorro.som();
+		
+		System.out.println();
+		
+		cavalo.som();
+		
+		System.out.println();
+		
+		preguica.som();
 	}
 
 }

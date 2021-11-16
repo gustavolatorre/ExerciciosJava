@@ -13,9 +13,10 @@ public class Animal {
 		this.som = som;
 	}
 	
-	public void som()
+	public String som()
 	{
-		setSom(som);
+		System.out.println(getSom());
+		return som;
 	}
 
 	public String getNome() {
