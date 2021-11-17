@@ -1,23 +1,20 @@
 package Exercicio01;
 
-public class Animal {
+public abstract class Animal {
 	
 	private String nome;
 	private int idade;
-	private String som;
 	
-	public Animal(String nome, int idade, String som)
+	public Animal(String nome, int idade)
 	{
 		this.nome = nome;
 		this.idade = idade;
-		this.som = som;
 	}
 	
-	public String som()
-	{
-		System.out.println(getSom());
-		return som;
-	}
+	abstract public void som();
+	
+	abstract public void corre(Boolean corre);
+	
 
 	public String getNome() {
 		return nome;
@@ -35,13 +32,6 @@ public class Animal {
 		this.idade = idade;
 	}
 
-	public String getSom() {
-		return som;
-	}
-
-	public void setSom(String som) {
-		this.som = som;
-	}
 	
 	
 }

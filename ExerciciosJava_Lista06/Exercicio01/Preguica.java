@@ -2,13 +2,10 @@ package Exercicio01;
 
 public class Preguica extends Animal {
 
-	private Boolean sobeArvore;
-
-	public Preguica(String nome, int idade, String som, Boolean sobeArvore)
+	public Preguica(String nome, int idade)
 	{
-		super(nome, idade, som);
+		super(nome, idade);
 		
-		this.sobeArvore = sobeArvore;
 	}
 	
 	
@@ -16,21 +13,26 @@ public class Preguica extends Animal {
 	public void informacoes()
 	{
 		System.out.println("Nome: " + getNome() + 
-							"\nIdade: " + getIdade() + 
-							"\nSom: " + getSom() +
-							"\nEste animal sobre árvore: " + getSobeArvore());
+							"\nIdade: " + getIdade());
 	}
 
-
-
-	public Boolean getSobeArvore() {
-		return sobeArvore;
-	}
-
-
-	public void setSobeArvore(Boolean sobeArvore) {
-		this.sobeArvore = sobeArvore;
+	@Override
+	public void som() 
+	{
+		System.out.println("Nhennn!");
 	}
 	
+	@Override
+	public void corre(Boolean corre) 
+	{
+		if (corre == true) 
+		{
+			System.out.println("Este animal corre!");
+		}
+		else
+		{
+			System.out.println("Este animal sobe em árvores!");
+		}
+	}
 	
 }

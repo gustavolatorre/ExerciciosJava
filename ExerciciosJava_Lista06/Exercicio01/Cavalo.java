@@ -2,13 +2,10 @@ package Exercicio01;
 
 public class Cavalo extends Animal {
 
-	private Boolean correr;
-
-	public Cavalo(String nome, int idade, String som, Boolean correr)
+	public Cavalo(String nome, int idade)
 	{
-		super(nome, idade, som);
+		super(nome, idade);
 		
-		this.correr = correr;
 	}
 	
 	
@@ -16,16 +13,25 @@ public class Cavalo extends Animal {
 	public void informacoes()
 	{
 		System.out.println("Nome: " + getNome() + 
-							"\nIdade: " + getIdade() + 
-							"\nSom: " + getSom() +
-							"\nEste animal corre: " + getCorrer());
+							"\nIdade: " + getIdade());
 	}
 	
-	public Boolean getCorrer() {
-		return correr;
+	@Override
+	public void som()
+	{
+		System.out.println("Ihiunnn!");
 	}
-
-	public void setCorrer(Boolean correr) {
-		this.correr = correr;
+	
+	@Override
+	public void corre(Boolean corre) 
+	{
+		if (corre == true) 
+		{
+			System.out.println("Este animal corre!");
+		}
+		else
+		{
+			System.out.println("Este animal sobe em árvores!");
+		}
 	}
 }

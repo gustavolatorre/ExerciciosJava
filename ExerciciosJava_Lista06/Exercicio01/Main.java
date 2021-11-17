@@ -4,31 +4,25 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		
-		Cachorro cachorro =  new Cachorro("Toto", 5, "Au au au!", true);
+		Cachorro cachorro = new Cachorro("Toto", 5);
 		cachorro.informacoes();
-		
-		System.out.println();
-		
-		Cavalo cavalo = new Cavalo("Jojo", 7, "Ihuuuuuii", true);
-		cavalo.informacoes();
-		
-		System.out.println();
-		
-		Preguica preguica = new Preguica("Brucer", 10, "hihihi", true);
-		preguica.informacoes();
-		
-		System.out.println();
-		
+		cachorro.corre(true);
 		cachorro.som();
 		
 		System.out.println();
 		
+		Cavalo cavalo = new Cavalo("Spirit", 7);
+		cavalo.informacoes();
+		cavalo.corre(true);
 		cavalo.som();
 		
 		System.out.println();
 		
+		Preguica preguica = new Preguica("Brucer", 15);
+		preguica.informacoes();
+		preguica.corre(false);
 		preguica.som();
+		
 	}
 
 }
