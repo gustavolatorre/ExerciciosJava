@@ -19,11 +19,11 @@ public class Main {
 		System.out.print("Entre com seu sobrenome: ");
 		sobrenome = ler.next();
 		
-		System.out.println("Escolha apenas 3 produtos!");
+		System.out.println("Escolha 3 produtos!");
 		
 		for (i = 0; i<3; i++)
 		{
-		System.out.println("PRODUTOS:" + 
+		System.out.println("\nPRODUTOS:" + 
 		"\n1 - Tênis Nike" + 
 		"\n2 - Camisa Polo" + 
 		"\n3 - Saia" + 
@@ -57,6 +57,7 @@ public class Main {
 			break;
 		default:
 			System.out.println("Opcão inválida!");
+			i--;
 		}
 		
 		}
